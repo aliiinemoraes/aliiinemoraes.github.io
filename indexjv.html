@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da velha</title>
+  <link rel="stylesheet" href="stylejv.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="scriptjv.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1> Jogo da Velha</h1>
+    <table class="jogo" border="2">
+        <tr>
+            <td class="quadrado" onclick="jogar(this)"></td>
+            <td class="quadrado" onclick="jogar(this)"></td>
+            <td class="quadrado" onclick="jogar(this)"></td>
+        </tr>
+        <tr>
+            <td class="quadrado" onclick="jogar(this)"></td>
+            <td class="quadrado" onclick="jogar(this)"></td>
+            <td class="quadrado" onclick="jogar(this)"></td>
+        </tr>
+        <tr>
+            <td class="quadrado" onclick="jogar(this)"></td>
+            <td class="quadrado" onclick="jogar(this)"></td>
+            <td class="quadrado" onclick="jogar(this)"></td>
+        </tr>
+    </table>
+    <button onclick="reiniciar()">Reiniciar</button>
+  </div>
+  <footer class="footer">
+    <div class="social">
+        <a href="https://www.linkedin.com/in/alinetmmoraes/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/aliiinemoraes" target="_blank"><i class='bx bxl-github'></i></a>
+</div>
+
+<ul class="list">
+    <li>
+        <a href="https://github.com/aliiinemoraes/jogo-da-velha" target="_blank">Ver código</a>
+    </li>
+    <li>
+        <a href="/index.html">Voltar ao site</a>
+    </li>
+    </ul>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #a3a1a1;
+}
+
+body{
+    background-image: url("../to-do-list/bg.png");
+    background-position: center;
+    background-size: cover;
+}
+:root{
+    --bg-color: #111111;
+    --second-bg-color: #151515;
+    --text-color: white;
+    --main-color: #054f77;
+}
+button{
+    background-color: #fdfdfd;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+button:hover{
+    background-color: var(--main-color);
+    color:white;
+}
+button:hover > i {
+    color:white;
+}
+button i{
+    pointer-events: none;
+    color: var(--main-color);
+    font-weight: bold;
+}
+input,
+select{
+    padding: 0.25rem 0.5rem;
+}
+.hide{
+    display: none;
+}
+.todo-container{
+    max-width: 450px;
+    margin: 3rem auto 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+.todo-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+#todo-form,
+#edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+#todo-form p,
+#edit-form p{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.form-control{
+    display: flex;
+}
+.form-control input{
+    margin-right: 0.3rem;
+}
+#cancel-edit-btn{
+    margin-top: 1rem;
+    color: #444;
+}
+#toolbar{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+#toolbar h4{
+    margin-top: 0.5rem;
+}
+#search{
+    border-right:1px solid #ddd;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+#search form{
+    display: flex;
+}
+#search input{
+    width: 100%;
+    margin-right: 0.3rem;
+}
+#filter{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+#filter select{
+    flex: 1;
+}
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s ease-in-out;
+}
+.todo h3{
+    flex: 1;
+    font-size: 0.9rem;
+}
+.todo button{
+    margin-left: 0.4rem;
+}
+.done{
+    background: var(--main-color);
+}
+.done h3{
+    color: var(--text-color);
+    text-decoration: line-through;
+    font-style: italic;
+}
+:root{
+    --bg-color: #111111;
+    --second-bg-color: #151515;
+    --text-color: white;
+    --main-color: #054f77;
+}
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: transparent;
+    border: 0.2rem solid var(--main-color);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease-in-out;
+}
+.social-icons a:hover{
+    color: white;
+    transform: scale(1.3) translateY(-5px);
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--main-color);
+}
+.footer .social a{
+    font-size: 25px;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    background-color: var(--main-color);
+    color: var(--text-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: white;
+    border-radius: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+.footer ul li a:hover{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+::-webkit-scrollbar-track{
+    background-color: var(--bg-color);
+    width: 50px;
+}
