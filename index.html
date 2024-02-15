@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet"  href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#home"class="logo">Aline <span>Moraes</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+        <a href="#home"class="active">Home</a>
+        <a href="#sobre"class="active">Sobre mim</a>
+        <a href="#projetos"class="active">Projetos</a>
+        <a href="#contato"class="active">Contato</a>
+    </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="icon.jpg" alt="">
+        </div>
+
+        <span class="home-content">
+            <h1>Aline <span>Moraes</span></h1>
+            <h3 class="text-animation">
+             <span></span>
+            </h3>
+            <div class="social-icons">
+            <a href="https://www.linkedin.com/in/alinetmmoraes/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/aliiinemoraes"target="_blank"><i class='bx bxl-github'></i></a>
+         </div>  
+            <a href="#contato" class="btn">Me contrate</a> 
+        </span>
+    </section>
+    <section class="sobre" id="sobre">
+        <div class="sobre-mim">
+            <h2 class="heading">Sobre<span>Mim</span></h2>
+            <p>Graduanda no 3º semestre de Análise e Desenvolvimento de Sistemas pela Universidade Anhanguera. Entusiasta na área de Front End, conhecimento em HTML, CSS, JavaScript (Typescript), Java e Phyton. Inglês avançado em leitura, intermediário em escrita e conversação.</p>
+            <a href="#projetos" class="btn">Projetos</a>
+        </div>
+        <div class="sobre-img">
+            <img src="icon.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="projetos" id="projetos">
+        <h2 class="heading">Projetos</h2>
+        <div class="projetos-container">
+
+            <div class="projetos-box">
+                <div class="projetos-infos">
+                    <h4>Tecaldo virtual</h4>
+                    <p>Teclado virtual criado com HTML, CSS e JavaScript, com alternância de temas claro e escuro.
+                        <a href="../teclado virtual/index.html">Ver projeto</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-box">
+                <div class="projetos-infos">
+                    <h4>Gerador de senhas</h4>
+                    <p>Criado com HMTL, CSS e JavaScript, no qual seleciona a quantidade de caracteres para a senha, e já copia com um único click.
+                        <a href="../gerador de senhas/index.html">Ver projeto</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-box">
+                <div class="projetos-infos">
+                    <h4>Calculadora</h4>
+                    <p>Calculadora básica, utilizando HTML, CSS e JavaScript.
+                        <a href="../calculadora/index.html">Ver projeto</a>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="projetos-box">
+                <div class="projetos-infos">
+                    <h4>Jogo da velha</h4>
+                    <p>Jogo popular brasileiro, conhecido como "Jogo da velha", criado com HTML, CSS e JavaScript.
+                        <a href="../jogo-velha/index.html">Ver projeto</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-box">
+                <div class="projetos-infos">
+                    <h4>To-do List</h4>
+                    <p>Espaço criado com HMTL, CSS e Javascript, para adicionar, remover e editar tarefas.
+                        <a href="../to-do-list/index.html">Ver projeto</a>
+                    </p>
+                </div>
+            </div>
+            <div class="projetos-box">
+                <div class="projetos-infos">
+                    <h4>Pokedex</h4>
+                    <p>Projeto desenvolvido com HTML, CSS, JavaScript, utilizando API de <a href="https://pokeapi.co/api/v2/pokemon/">Pokemon</a>
+                        <a href="../pokedex/index.html">Ver projeto</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <h2 class="heading">Contato</h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="E-mail">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Telefone">
+                <input type="text" placeholder="Assunto">
+            </div>
+            <textarea name="" id="" cols="20" rows="3" placeholder="Digite sua mensagem"></textarea>
+            <input type="submit" value="Enviar menssagem" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/alinetmmoraes/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/aliiinemoraes"target="_blank"><i class='bx bxl-github'></i></a>
+    </div>
+    
+    <ul class="list">
+        <li>
+            <a href="#"> Topo</a>
+        </li>
+        <li>
+            <a href="#"> Sobre mim</a>
+        </li>
+        <li>
+            <a href="#"> Projetos</a>
+        </li>
+    </ul>
+      </footer>
+
+
+    <script src="script.js"></script> 
+</body>
+</html>
